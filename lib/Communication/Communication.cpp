@@ -48,3 +48,37 @@ void Communication::connectMqtt(){
   }
 
 }
+
+/*
+#include <Arduino.h>
+//#include <Servo.h>
+#include <Servo.h>
+
+Servo ESC;
+
+const int potPin = 0;
+
+int potVal;
+
+
+void setup()
+{
+  Serial.begin(9600);
+
+  ESC.attach(9, 1000, 2000);
+}
+
+
+void loop()
+{
+  potVal = analogRead(potPin);
+  Serial.println(potVal);
+
+  potVal = map(potVal, 0, 1024, 0, 180);
+
+  ESC.write(potVal);
+
+  Serial.println(potVal);
+  delay(500);
+}
+*/
